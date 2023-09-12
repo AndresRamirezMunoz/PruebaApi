@@ -1,7 +1,5 @@
 package co.com.choucair.certification.api.questions;
 
-import co.com.choucair.certification.api.models.ReqresUser;
-import co.com.choucair.certification.api.models.ReqresUserResponse;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

@@ -8,14 +8,11 @@ Característica: Como usuario nuevo quiero hacer el ciclo de vida en el sistema
     Dado que es un usuario nuevo
       | name   | job   |
       | <name> | <job> |
-    #  | name   | salary   | age   |
-    #  | <name> | <salary> | <age> |
     Cuando se da inicio al proceso de registro
-    #Entonces el usuario validara que su registro es exitoso <status> y <message>
     Entonces el usuario validara que su registro con statusCode <statusCode>
     Ejemplos:
-      | name     | salary | age | status  | message                              | job     | statusCode |
-      | Jhon Doe | 1300   | 23  | success | Successfully! Record has been added. | jobTest | 201        |
+      | name     | job     | statusCode |
+      | Jhon Doe | jobTest | 201        |
 
   @Get
   Esquema del escenario: Se quiere validar los datos en el sistema
@@ -25,9 +22,6 @@ Característica: Como usuario nuevo quiero hacer el ciclo de vida en el sistema
       | id   | email   | firstName   | lastName   |
       | <id> | <email> | <firstName> | <lastName> |
     Ejemplos:
-     # | name     | salary                 | age       | status         | message                              | job     | statusCode |
-     # | Jhon Doe | 1300                   | 23        | success        | Successfully! Record has been added. | jobTest | 201        |
-
       | id | email                  | firstName | lastName |
       | 1  | george.bluth@reqres.in | George    | Bluth    |
 
